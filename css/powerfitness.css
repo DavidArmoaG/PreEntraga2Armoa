@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    
+    background-image: linear-gradient(90deg, rgb(22, 3, 48),rgb(5, 88, 30));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    
+}
+body::before {
+    content:"";
+    width: 100%;
+    min-height: 100vh;
+    opacity: 5;
+}
+#header .logo {
+    background-color: black;
+}
+#header .logo img {
+    width: 30%;
+    
+    
+    
+}
+nav {
+    font-family: arial, helvetica;
+    background: #110235;
+    height: 40px;
+}
+.navbar-brand {
+    padding-right: 50px;
+}
+.nav-link{
+    margin-right: 50px;
+}
+
+body header h1 {
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+#intro {
+    width: cover;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagenes/main.jpg);
+    background-size: cover;
+    background-position: center;
+    
+       
+}
+
+#intro h2 {
+   color: #fff;
+   text-align:center;
+   width: 80%;
+   font-size: 1cm;
+   margin-top: 0%;
+   
+
+}   
+#intro .boton {
+    align-items: center;
+    background: transparent;
+    height: auto;
+    display: flex;   
+}
+
+#intro .boton a {
+    font-size: large;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 150px 45%;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+       
+}
+#intro .boton a:hover{
+    background-color: transparent;
+    border: 2px solid red;
+}
+footer {
+    color: grey;
+    ;
+}
+/*Clases*/
+#tabla {
+    color: white;
+    font-size: large;
+    margin-top: 15px; 
+      
+}
+.grilla {
+    font-size: larger;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+/*Fotos*/
+#fotos {
+    color: white;
+    font-size: larger;
+    margin-top: 15px;
+}
+.galeria {
+    padding: 5px;
+    display: flex;
+}
+.columna {
+    height: 500px;
+    padding: 5px;
+    display: flex;
+}
+
+/*Contacto*/
+
+#contacto {
+    color: white;
+    font-size: larger;
+    margin-top: 15px;
+}
+#contacto div {
+    margin-top: 15px;
+    margin-left: 2%;
+}
+
+/*Inscribite*/
+ #inscribite {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: large;
+ }
+
+ #inscribite label {
+    color: white;
+ }
+ /*Footer*/
+ #footer{
+    margin-top: 10%;
+    
+ }
+ #footer p a img{
+    width: 25px;
+    margin-right: 10px;
+    
+
+ }
