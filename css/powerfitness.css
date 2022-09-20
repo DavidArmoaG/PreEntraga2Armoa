@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
-    
+       
 }
 body::before {
     content:"";
@@ -19,18 +19,10 @@ body::before {
     min-height: 100vh;
     opacity: 5;
 }
-#header .logo {
-    background-color: black;
-}
-#header .logo img {
-    width: 30%;
-    
-    
-    
-}
+
+
 .menu {
     font-family: arial, helvetica;
-    background: #110235;
     height: 40px;
 }
 .navbar-brand {
@@ -39,51 +31,43 @@ body::before {
 .nav-link{
     margin-right: 50px;
 }
-
-body header h1 {
-    color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} 
-#intro {
+ 
+.flex-container {
+    background-image: url(../imagenes/main.jpg);
+    display: flex;
     width: cover;
     height: 50vw;
-    display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/main.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+    flex-direction: column;      
+}
+.frase {
+    display: flex; 
     
-       
 }
 
-#intro h2 {
+.flex-item {
    color: #fff;
    text-align:center;
-   width: 80%;
-   font-size: 1cm;
-   margin-top: 0%;
-   
-
+   width: 90%; 
+   display: flex; 
 }   
-#intro .boton {
-    align-items: center;
-    background: transparent;
-    height: auto;
-    display: flex;   
-}
 
-#intro .boton a {
-    font-size: large;
+.boton {
+    text-align: center;
+    display: flex;   
+    font-size:x-large;
     border-radius: 10px;
-    padding: 15px 30px;
-    margin: 150px 45%;
+    padding: 15px;
+    margin: 150px 45.8%;
     color: white;
     background-color: red;
-    text-decoration: none;
-       
+    text-decoration: none;           
 }
-#intro .boton a:hover{
+
+.boton:hover{
     background-color: transparent;
     border: 2px solid red;
 }
