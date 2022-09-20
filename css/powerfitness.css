@@ -28,7 +28,7 @@ body::before {
     
     
 }
-nav {
+.menu {
     font-family: arial, helvetica;
     background: #110235;
     height: 40px;
@@ -86,6 +86,12 @@ body header h1 {
 #intro .boton a:hover{
     background-color: transparent;
     border: 2px solid red;
+}
+.container  {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    
 }
 footer {
     color: grey;
