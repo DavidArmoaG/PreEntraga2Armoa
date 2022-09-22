@@ -47,7 +47,7 @@ body::before {
     background-position: center; 
     flex-direction: column; 
     margin-top: 1rem;
-       
+    
 }
 
 .flex-item {
@@ -68,9 +68,14 @@ body::before {
     animation-duration: 3s;
     animation-delay: 1s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;     
 }
 
+@media (max-width: 300px) {
+    .img-fluid {
+        width: 9rem;
+    }
+}
 
 .frase {
     display: flex;
@@ -103,7 +108,10 @@ body::before {
 }
 
 /*Clases*/
+.row {
+    display:block;
 
+}
 
 /*Fotos*/
 #fotos {
@@ -146,8 +154,8 @@ body::before {
  /*Footer*/
  #footer {
     size: cover;
-    position: absolute;
     bottom: 0;
+    
     
     
     
