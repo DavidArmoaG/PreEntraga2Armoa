@@ -13,6 +13,7 @@
 
 <body>
     <div>
+        <!--Barra de navegacion con Bootstrap-->
         <nav class="menu">
             <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
                 <div class="container-fluid">
@@ -22,9 +23,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                          <a class="nav-link" href="./html/powerfitness2.html">Clases</a>
-                          <a class="nav-link" href="./html/powerfitness3.html">Fotos</a>
-                          <a class="nav-link" href="./html/powerfitness4.html">Contacto</a>
+                            <a class="nav-link" href="./html/powerfitness2.html">Clases</a>
+                            <a class="nav-link" href="./html/powerfitness3.html">Fotos</a>
+                            <a class="nav-link" href="./html/powerfitness4.html">Contacto</a>
                           
                         </div>
                     </div>
@@ -32,10 +33,10 @@
             </nav>
         </nav>
         
-
+        <!--Main con Flexbox-->
         <div class="flex-container">
             <div class="flex-item">
-                <p class="frase text-center">
+                <p class="frase">
                     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Ullam labore reprehenderit magni velit qui harum, recusandae vero 
                     veniam animi totam
@@ -47,12 +48,13 @@
             </div>
         </div>
         
+        <!--Cards con Bootstrap-->
         <div class="container">
             <div class="card" style="width: 35rem;">
                 <img src="./imagenes/alimentacion.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Plan de alimentacion</h5>
-                  <p class="card-text">Perdida de peso/Ganancia de masa</p>
+                  <p class="card-text">Asesoramiento en perdida de peso/ganancia de masa</p>
                   <a href="#" class="btn btn-primary">Comenza Hoy!</a>
                 </div>
             </div>
@@ -66,16 +68,33 @@
             </div>
         </div>
 
-        <br>
-        <footer id="footer">
-           
-            <p>Seguinos en nuestras redes!
-                <a href=”https://www.facebook.com/”><img src="./imagenes/facebook.png"></a>
-                <a href="https://www.instagram.com/"><img src="./imagenes/instagram.png"></a>
-            </p>
-            <p>Copyright 2022 All rights reserved-</p>
-            <p><a href=”#”>Ley de Cookies</a></p>
-
+        <br><br>
+        <!--Footer con Bootstrap-->
+        <footer class="footer">
+            <div class="container-fluid">
+                
+                <div class="row p-4 bg-dark text-white py-4">
+                    
+                    <div class="col-xs-12 col-lg-2">
+                        <p class="h5 mb-4"><img src="imagenes/Logo.jpeg" width="115"></p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <p class="h5">Seguinos en nuestras redes!</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <p class="h6 mb-4">
+                            <a href=”https://www.facebook.com/”><img src="./imagenes/facebook.png" width="35"></a>
+                            <a href="https://www.instagram.com/"><img src="./imagenes/instagram.png" width="35"></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <p class="h6 mb-4">Copyright 2022 All rights reserved © -</p>
+                        <p><a class="text-secondary" href=”#”>Ley de Cookies</a></p>
+                    </div>
+                          
+                </div>
+            
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 

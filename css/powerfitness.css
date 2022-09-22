@@ -11,23 +11,27 @@ body {
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
-       
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    
+    
+    
 }
 body::before {
-    content:"";
     width: 100%;
-    min-height: 100vh;
     opacity: 5;
 }
-
 
 .menu {
     font-family: arial, helvetica;
     height: 40px;
 }
+
 .navbar-brand {
     padding-right: 50px;
 }
+
 .nav-link{
     margin-right: 50px;
 }
@@ -36,35 +40,41 @@ body::before {
     background-image: url(../imagenes/main.jpg);
     display: flex;
     width: cover;
-    height: 50vw;
+    height: 55vw;
     align-items: center;
     justify-content: center;
     background-size: cover;
     background-position: center; 
-    flex-direction: column;      
-}
-.frase {
-    display: flex; 
-    
+    flex-direction: column; 
+    margin-top: 1rem;
+       
 }
 
 .flex-item {
-   color: #fff;
-   text-align:center;
-   width: 90%; 
-   display: flex; 
-}   
+    display: flex;
+    color: #fff;
+    text-align:center;
+    width: 90%; 
+}  
+
+.frase {
+    display: flex;
+    font-size: 4rem;    
+}
+html {
+    font-size 50%}
 
 .boton {
     text-align: center;
     display: flex;   
-    font-size:x-large;
+    font-size: 1.5rem;
     border-radius: 10px;
     padding: 15px;
-    margin: 150px 45.8%;
+    margin: 20px 45.8%;
     color: white;
     background-color: red;
-    text-decoration: none;           
+    text-decoration: none;
+               
 }
 
 .boton:hover{
@@ -77,22 +87,10 @@ body::before {
     justify-content: space-between;
     
 }
-footer {
-    color: grey;
-    ;
-}
+
 /*Clases*/
-#tabla {
-    color: white;
-    font-size: large;
-    margin-top: 15px; 
-      
-}
-.grilla {
-    font-size: larger;
-    margin-top: 30px;
-    margin-left: 10%;
-}
+
+
 /*Fotos*/
 #fotos {
     color: white;
@@ -132,13 +130,15 @@ footer {
     color: white;
  }
  /*Footer*/
- #footer{
-    margin-top: 10%;
+ #footer {
+    size: cover;
+    position: absolute;
+    bottom: 0;
+    
+    
     
  }
- #footer p a img{
-    width: 25px;
-    margin-right: 10px;
+ 
     
 
- }
+ 
