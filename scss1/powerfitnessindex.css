@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Source+Sans+3:wght@400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body*/
+body {
+  background-image: linear-gradient(90deg, rgb(22, 3, 48), rgb(5, 88, 30));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+} /*Barra de navegacion con Bootstrap*/
+.menu {
+  background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0));
+  transition: background 0.4s;
+}
+.menu .navbar {
+  background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0));
+  transition: background 0.4s;
+}
+.menu .navbar .navbar-brand {
+  padding-right: 50px;
+}
+.menu .navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.menu .navbar .navbar-nav .nav-link {
+  margin-right: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: rgba(15, 15, 15, 0.9);
+  }
+  .navbar-nav a {
+    margin: 0.5rem;
+  }
+  .dropdown-menu {
+    width: 50vw;
+  }
+  nav .dropdown {
+    text-align: center;
+  }
+}
+/*Main con Flexbox*/
+.flex-container {
+  background-image: url(../imagenes/main.jpg);
+  box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.8);
+  display: flex;
+  width: cover;
+  height: 55vw;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+.flex-container.animacion {
+  -webkit-animation-name: mi-anime;
+          animation-name: mi-anime;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.flex-container .flex-item {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+}
+.flex-container .flex-item .frase {
+  display: flex;
+  font-size: 4rem;
+}
+.flex-container .flex-item .boton {
+  border: 3px solid rgb(39, 105, 247);
+  text-align: center;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 41%;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+}
+.flex-container .flex-item .boton:hover {
+  color: white;
+  border: 3px solid rgb(39, 105, 247);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 15px 1px rgb(39, 105, 247);
+  -webkit-box-shadow: 0px 0px 30px 5px rgb(39, 105, 247);
+  -moz-box-shadow: 0px 0px 15px 1px rgb(39, 105, 247);
+  transform: scale(1.03);
+  transition: 0.3s ease all;
+}
+
+@-webkit-keyframes mi-anime {
+  0% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes mi-anime {
+  0% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@media (max-width: 300px) {
+  .img-fluid {
+    width: 9rem;
+  }
+}
+/*Cards con Bootstrap*/
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .card:hover {
+  transform: scale(1.04);
+  transition: 0.3s ease all;
+  border: 3px solid rgb(39, 105, 247);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 15px 1px rgb(39, 105, 247);
+  -webkit-box-shadow: 0px 0px 30px 5px rgb(39, 105, 247);
+  -moz-box-shadow: 0px 0px 15px 1px rgb(39, 105, 247);
+  transform: scale(1.03);
+  transition: 0.3s ease all;
+}
+
+/*condicional Cards*/
+@media (min-width: 768px) {
+  .container .card {
+    background-color: #2a2a2a;
+  }
+  .container .card {
+    color: white;
+  }
+}/*# sourceMappingURL=powerfitnessindex.css.map */

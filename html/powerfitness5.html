@@ -12,88 +12,95 @@
 </head>
 
 <body>
-    <div> 
-        <nav class="menu">    
-            <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="../index.html">Home</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!--Barra de navegacion con Bootstrap-->
+    <nav class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid padding-def">
+                <a class="navbar-brand" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link" href="./powerfitness2.html">Clases</a>
-                      <a class="nav-link" href="./powerfitness3.html">Fotos</a>
-                      <a class="nav-link" href="./powerfitness4.html">Contacto</a>
+                        <a class="nav-link" href="../html/powerfitness2.html">Clases</a>
+                        <a class="nav-link" href="../html/powerfitness3.html">Fotos</a>
+                        <a class="nav-link" href="../html/powerfitness4.html">Contacto</a>
                       
                     </div>
-                  </div>
                 </div>
-            </nav>
+            </div>
         </nav>
-    </div>
-    
-    <header>
-        <h1>Inscribite</h1>
-    </header>
-        <h1 id="inscribite">
-        <form action="" method="" enctype="">
-        <label for="Nombre">Nombre</label>
-        <input type="text" id="Nombre" placeholder="Ingrese su nombre aqui">
-    
-    <br>
-    <div>
-        <label for="Mail">Email</label>
-        <input type="text" id="Nombre" placeholder="Ingrese su e-Mail">
-    </div>
-    <div>
-        <label for="Mail">Edad</label>
-        <input type="text" id="Nombre" placeholder="Ingrese su Edad">
-    </div>
-    <div>
-        <label for="Comentarios">Escriba su mensaje</label>
-     <br>
-        <textarea name="" id="Comentarios" cols="30" rows="5"></textarea>
-    </div>
-    <div>
-        <input type="button" value="Enviar ahora">
-        <input type="reset" value="Borrar todo">
-    </div>
-
-
-
-
+    </nav>
+    <section id="contacto">
+      <div class="container-fluid index__contact--bg padding-def py-5 index__contact">
+          <div class="index__contact--left col-xl-6 col-sm-12 p-5 scroll-fade">
+            <h3>Inscribite</h3>
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Edad</label>
+              <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">e-mail</label>
+                <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+              </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Sexo</label>
+              <select class="form-control form-select" name="" id="">
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Mensaje opcional</label>
+              <textarea class="form-control" name="" id="" rows="3"></textarea>
+            </div>
+  
+            <div class="index__contact--left--bottom d-flex flex-wrap-reverse">
+                
+              <div class="index__contact--left--bottom--button">
+                <button type="submit" class="boton-btn-primary mb-5">
+                  <span class="custom-btn">Enviar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     <br>
     <!--Footer con Bootstrap-->
     <footer class="footer">
-        <div class="container-fluid">
-            
-            <div class="row p-4 bg-dark text-white py-4">
-                
-                <div class="col-xs-12 col-lg-2">
-                    <p class="h5 mb-4"><img src="../imagenes/Logo1.png" width="115"></p>
-                </div>
-                <div class="col-xs-12 col-lg-3">
-                    <p class="h5">Seguinos en nuestras redes!</p>
-                </div>
-                <div class="col-xs-12 col-lg-4">
-                    <p class="h6 mb-4">
-                        <a href=”https://www.facebook.com/”><img src="../imagenes/facebook.png" width="35"></a>
-                        <a href="https://www.instagram.com/"><img src="../imagenes/instagram.png" width="35"></a>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-lg-3">
-                    <p class="h6 mb-4">Copyright 2022 All rights reserved © -</p>
-                    <p><a class="text-secondary" href=”#”>Ley de Cookies</a></p>
-                </div>
-                      
-            </div>
-        
-        </div>
+      <div class="container-fluid">
+          
+          <div class="row p-4 bg-dark text-white py-4">
+              
+              <div class="col-xs-12 col-lg-2">
+                  <p class="h5 mb-4"><img src="../imagenes/Logo1.png" width="115"></p>
+              </div>
+              <div class="col-xs-12 col-lg-3">
+                  <p class="h5">Seguinos en nuestras redes!</p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                  <p class="h6 mb-4">
+                      <a href=”https://www.facebook.com/”><img src="../imagenes/facebook.png" width="35"></a>
+                      <a href="https://www.instagram.com/"><img src="../imagenes/instagram.png" width="35"></a>
+                  </p>
+              </div>
+              <div class="col-xs-12 col-lg-3">
+                  <p class="h6 mb-4">Copyright 2022 All rights reserved © -</p>
+                  <p><a class="text-secondary" href=”#”>Ley de Cookies</a></p>
+              </div>
+                    
+          </div>
+      
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
-    crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
+        crossorigin="anonymous"></script>
 
-</body>
+  </body>
 </html>

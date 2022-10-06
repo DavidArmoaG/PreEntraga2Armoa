@@ -1,0 +1,11 @@
+
+body {
+    background-image: linear-gradient(90deg, rgb(22, 3, 48),rgb(5, 88, 30));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;         
+}
